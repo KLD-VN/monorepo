@@ -1,0 +1,295 @@
+.shiba-button {
+    height: 2.5rem;
+    padding: 0 1 rem;
+    appearance: none;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: transparent;
+    border-radius: 2.5rem;
+    color: #11161a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow-y: hidden;
+        gap: 8px;
+    }
+
+    &:active {
+        outline: none;
+        background: #f7f7f8;
+    }
+
+    &[disabled],
+    fieldset[disabled] .shiba-button {
+        background: #fff;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    &--circle {
+        border-radius: 50%;
+        padding: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &--primary {
+        background: #017a9b;
+        color: #fff;
+    }
+
+    &--primary:active,
+    &--primary:focus {
+        background: #014052;
+    }
+
+    &--primary[disabled],
+    fieldset[disabled] &--primary {
+        background: #017a9b;
+        border: transparent;
+    }
+
+    &--dark {
+        background: #2e3d49;
+        color: #fff;
+    }
+
+    &--dark:active,
+    &--dark:focus {
+        background: #11161a;
+    }
+
+    &--dark[disabled],
+    fieldset[disabled] &--dark {
+        border: transparent;
+    }
+
+    &--destructive {
+        background: #dd3131;
+        border: transparent;
+        color: #fff;
+    }
+
+    &--destructive:active,
+    &--destructive:focus {
+        background: #962121;
+    }
+
+    &--destructive[disabled],
+    fieldset[disabled] &--destructive {
+        background: #dd3131;
+        border: transparent;
+    }
+
+    &--minimal {
+        background: transparent;
+    }
+
+    &--minimal:active,
+    &--minimal:focus,
+    &--minimal:hover {
+        background: #f7f7f8;
+    }
+
+    &--minimal[disabled],
+    fieldset[disabled] &--minimal {
+        border: transparent;
+        background: transparent;
+    }
+
+    &--minimal-inverse {
+        background: transparent;
+        color: #fff;
+    }
+
+    &--minimal-inverse:active,
+    &--minimal-inverse:focus,
+    &--minimal-inverse:hover {
+        background: hsla(0, 0%, 100%, 0.16);
+    }
+
+    &--minimal-inverse[disabled],
+    fieldset[disabled] &--minimal-inverse {
+        border: transparent;
+        background: transparent;
+    }
+
+    &--dark,
+    &--default,
+    &--destructive,
+    &--primary,
+    &--secondary {
+        -webkit-box-shadow: 0 4px 8px 0 rgba(17, 22, 26, 0.16),
+            0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.04);
+        box-shadow: 0 4px 8px 0 rgba(17, 22, 26, 0.16),
+            0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.04);
+    }
+
+    &--circle {
+        background: #e7e7e7;
+    }
+
+    &--dark:hover,
+    &--default:hover,
+    &--destructive:hover,
+    &--primary:hover,
+    &--secondary:hover,
+    &--circle:hover {
+        background: #dfdfdf;
+    }
+
+    &--dark:active,
+    &--default:active,
+    &--destructive:active,
+    &--primary:active,
+    &--secondary:active,
+    &--circle:active {
+        -webkit-box-shadow: 0 2px 4px 0 rgba(17, 22, 26, 0.16),
+            0 0 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.04);
+        box-shadow: 0 2px 4px 0 rgba(17, 22, 26, 0.16),
+            0 0 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.04);
+    }
+
+    //   &--dark:focus,
+    //   &--default:focus,
+    //   &--destructive:focus,
+    //   &--primary:focus,
+    //   &--secondary:focus,
+    //   &--circle:focus {
+    //     -webkit-box-shadow: 0 0 0 4px #02b3e4;
+    //     box-shadow: 0 0 0 4px #02b3e4;
+    //   }
+
+    &--dark[disabled],
+    &--default[disabled],
+    &--destructive[disabled],
+    &--minimal,
+    &--minimal-inverse,
+    &--minimal-inverse:active,
+    &--minimal-inverse:hover,
+    &--minimal:active,
+    &--minimal:hover,
+    &--primary[disabled],
+    &--secondary[disabled],
+    &--circle[disabled] fieldset[disabled] &--dark,
+    fieldset[disabled] &--default,
+    fieldset[disabled] &--destructive,
+    fieldset[disabled] &--primary,
+    fieldset[disabled] &--secondary,
+    fieldset[disabled] &--circle {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    //   &--minimal-inverse:focus,
+    //   &--minimal:focus {
+    //     -webkit-box-shadow: 0 0 0 4px #02b3e4;
+    //     box-shadow: 0 0 0 4px #02b3e4;
+    //   }
+
+    &--minimal-inverse[disabled],
+    &--minimal[disabled],
+    fieldset[disabled] &--minimal,
+    fieldset[disabled] &--minimal-inverse {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    &--small {
+        height: 2rem;
+        padding: 0 1rem;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &__icon .vds-icon {
+        height: 3rem;
+        width: 3rem;
+        padding: 0.5rem;
+    }
+
+    &__icon--left {
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    &__icon--right {
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    &__icon--both {
+        padding: 0;
+    }
+
+    &--loading {
+        cursor: wait;
+    }
+
+    &--loading &__content {
+        height: 0;
+        outline: none;
+    }
+
+    &--loading &__loader div {
+        border-radius: 50%;
+        height: 0.375rem;
+        width: 0.375rem;
+        margin-right: 0.25rem;
+        -webkit-animation: pulsate 1s ease 0s infinite both;
+        animation: pulsate 1s ease 0s infinite both;
+        background-color: currentColor;
+        display: inline-block;
+    }
+
+    &--loading &__loader div:first-child {
+        -webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s;
+    }
+
+    &--loading &__loader div:last-child {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    @keyframes pulsate {
+
+        0%,
+        to {
+            opacity: 0.25;
+            -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+        }
+
+        50% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}
