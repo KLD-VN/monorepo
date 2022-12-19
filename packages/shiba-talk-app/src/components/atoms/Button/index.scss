@@ -1,19 +1,22 @@
+@import "@/sass/index.scss";
+
 .shiba-button {
+    position: relative;
     height: 2.5rem;
-    padding: 0 1 rem;
+    padding: 12px;
     appearance: none;
-    background: #fff;
+    background-color: transparent;
+    color: var(--primary-button-text);
     -webkit-appearance: none;
     -moz-appearance: none;
     border: transparent;
-    border-radius: 2.5rem;
-    color: #11161a;
+    border-radius: var(--button-corner-radius);
     cursor: pointer;
     display: inline-block;
     font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 1.5px;
-    line-height: 1.5rem;
+    line-height: 1.333;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -23,6 +26,9 @@
     -ms-user-select: none;
     user-select: none;
     vertical-align: middle;
+    touch-action: manipulation;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 
     &__content {
         height: 100%;
@@ -37,17 +43,47 @@
         gap: 8px;
     }
 
-    &:active {
-        outline: none;
-        background: #f7f7f8;
+    &__overlay {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--hover-overlay);
+        transition-duration: var(--fds-duration-extra-extra-short-out);
+        transition-timing-function: var(--fds-animation-fade-out);
+        border-radius: inherit;
+        transition-property: opacity;
+
+        &--default:hover {
+            background-color: var(--hover-overlay);
+            opacity: 1;
+            transition-duration: 0s;
+        }
+
+        &--default:active,
+        &--default:focus {
+            background-color: var(--press-overlay);
+            opacity: 1;
+            transition-duration: 0s;
+        }
+
+        &--disabled {
+            user-select: none;
+        }
     }
 
     &[disabled],
     fieldset[disabled] .shiba-button {
-        background: #fff;
+        background-color: var(--disabled-button-background);
+        color: var(--disabled-button-text);
         cursor: not-allowed;
-        opacity: 0.5;
     }
+
+    &--circle {
+        background: #e7e7e7;
+      }
 
     &--circle {
         border-radius: 50%;
@@ -56,164 +92,28 @@
         height: 2.5rem;
     }
 
+    &--default {
+        background: var(--shiba-white);
+        color: var(--shiba-black);
+    }
+
     &--primary {
-        background: #017a9b;
-        color: #fff;
+        background: var(--primary-button-background);
+        color: var(--primary-button-text);
     }
 
-    &--primary:active,
-    &--primary:focus {
-        background: #014052;
-    }
-
-    &--primary[disabled],
-    fieldset[disabled] &--primary {
-        background: #017a9b;
-        border: transparent;
-    }
-
-    &--dark {
-        background: #2e3d49;
-        color: #fff;
-    }
-
-    &--dark:active,
-    &--dark:focus {
-        background: #11161a;
-    }
-
-    &--dark[disabled],
-    fieldset[disabled] &--dark {
-        border: transparent;
-    }
-
-    &--destructive {
-        background: #dd3131;
-        border: transparent;
-        color: #fff;
-    }
-
-    &--destructive:active,
-    &--destructive:focus {
-        background: #962121;
-    }
-
-    &--destructive[disabled],
-    fieldset[disabled] &--destructive {
-        background: #dd3131;
-        border: transparent;
-    }
-
-    &--minimal {
-        background: transparent;
-    }
-
-    &--minimal:active,
-    &--minimal:focus,
-    &--minimal:hover {
-        background: #f7f7f8;
-    }
-
-    &--minimal[disabled],
-    fieldset[disabled] &--minimal {
-        border: transparent;
-        background: transparent;
-    }
-
-    &--minimal-inverse {
-        background: transparent;
-        color: #fff;
-    }
-
-    &--minimal-inverse:active,
-    &--minimal-inverse:focus,
-    &--minimal-inverse:hover {
-        background: hsla(0, 0%, 100%, 0.16);
-    }
-
-    &--minimal-inverse[disabled],
-    fieldset[disabled] &--minimal-inverse {
-        border: transparent;
-        background: transparent;
-    }
-
-    &--dark,
-    &--default,
-    &--destructive,
-    &--primary,
     &--secondary {
-        -webkit-box-shadow: 0 4px 8px 0 rgba(17, 22, 26, 0.16),
-            0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.04);
-        box-shadow: 0 4px 8px 0 rgba(17, 22, 26, 0.16),
-            0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.04);
+        background: var(--secondary-button-background);
+        color: var(--secondary-button-text);
     }
 
-    &--circle {
-        background: #e7e7e7;
-    }
-
-    &--dark:hover,
-    &--default:hover,
-    &--destructive:hover,
-    &--primary:hover,
-    &--secondary:hover,
-    &--circle:hover {
-        background: #dfdfdf;
-    }
-
-    &--dark:active,
-    &--default:active,
-    &--destructive:active,
-    &--primary:active,
-    &--secondary:active,
-    &--circle:active {
-        -webkit-box-shadow: 0 2px 4px 0 rgba(17, 22, 26, 0.16),
-            0 0 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.04);
-        box-shadow: 0 2px 4px 0 rgba(17, 22, 26, 0.16),
-            0 0 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.04);
-    }
-
-    //   &--dark:focus,
-    //   &--default:focus,
-    //   &--destructive:focus,
-    //   &--primary:focus,
-    //   &--secondary:focus,
-    //   &--circle:focus {
-    //     -webkit-box-shadow: 0 0 0 4px #02b3e4;
-    //     box-shadow: 0 0 0 4px #02b3e4;
-    //   }
-
-    &--dark[disabled],
     &--default[disabled],
-    &--destructive[disabled],
-    &--minimal,
-    &--minimal-inverse,
-    &--minimal-inverse:active,
-    &--minimal-inverse:hover,
-    &--minimal:active,
-    &--minimal:hover,
     &--primary[disabled],
     &--secondary[disabled],
-    &--circle[disabled] fieldset[disabled] &--dark,
+    &--circle[disabled] fieldset[disabled],
     fieldset[disabled] &--default,
-    fieldset[disabled] &--destructive,
     fieldset[disabled] &--primary,
-    fieldset[disabled] &--secondary,
-    fieldset[disabled] &--circle {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
-    //   &--minimal-inverse:focus,
-    //   &--minimal:focus {
-    //     -webkit-box-shadow: 0 0 0 4px #02b3e4;
-    //     box-shadow: 0 0 0 4px #02b3e4;
-    //   }
-
-    &--minimal-inverse[disabled],
-    &--minimal[disabled],
-    fieldset[disabled] &--minimal,
-    fieldset[disabled] &--minimal-inverse {
+    fieldset[disabled] &--secondary {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
@@ -227,7 +127,7 @@
         width: 100%;
     }
 
-    &__icon .vds-icon {
+    &__icon .shiba-icon {
         height: 3rem;
         width: 3rem;
         padding: 0.5rem;

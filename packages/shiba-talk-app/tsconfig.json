@@ -23,10 +23,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["./*"],
-    }
+      "@/*": ["./src/*"],
+    },
   },
-  "include": ["src/**/*"],
+  "include": ["src", "src/components/atoms/Button/Button.stories.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

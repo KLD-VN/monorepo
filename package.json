@@ -6,11 +6,11 @@
   "private": true,
   "license": "ISC",
   "scripts": {
-    "start": "lerna run --parallel start"
+    "start": "lerna run --parallel start",
+    "storybook": "lerna run --parallel storybook"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "lerna": "^6.1.0",
     "typescript": "^4.9.4"

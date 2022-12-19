@@ -36,14 +36,10 @@ export interface ButtonBaseProps {
 
   /** Button variant */
   variant?:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "dark"
-    | "destructive"
-    | "minimal"
-    | "minimal-inverse"
-    | "circle";
+  | "default"
+  | "primary"
+  | "secondary"
+  | "circle";
 }
 
 export interface ButtonProps extends ButtonBaseProps {
@@ -90,7 +86,7 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   variant = "default",
 }) => {
-  // Classname Logic
+  // ClassName Logic
   const className = classNames(
     PREFIX,
     variant && `${PREFIX}--${variant}`,
@@ -106,6 +102,13 @@ const Button: React.FC<ButtonProps> = ({
   );
 
   const contentClassName = `${PREFIX}__content`;
+  const overlayContentClassName = classNames(
+    `${PREFIX}__overlay`,
+    {
+      [`${PREFIX}__overlay--default`]: !disabled && !loading,
+      [`${PREFIX}__overlay--disabled`]: disabled || loading,
+    }
+  );
 
   // Consolidate Props
   const buttonAttributes = {
@@ -147,6 +150,7 @@ const Button: React.FC<ButtonProps> = ({
         {iconRight ? iconRight : null}
       </span>
       {loadingMarkup}
+      <div className={overlayContentClassName} />
     </Element>
   );
 };
