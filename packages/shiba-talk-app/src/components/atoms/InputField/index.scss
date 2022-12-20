@@ -1,0 +1,109 @@
+.shiba-text-input {
+  margin-bottom: 1rem
+}
+
+.shiba-text-input:last-child,
+.shiba-text-input>:last-child,
+.shiba-text-input>:last-child>:last-child,
+.shiba-text-input>:last-child>:last-child>:last-child {
+  margin-bottom: 0
+}
+
+.shiba-text-input__input {
+  border-radius: .25rem;
+  border: 1px solid #96a0aa;
+  height: 3rem;
+  padding: .625rem 1rem;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%
+}
+
+.shiba-text-input__input:focus {
+  -webkit-box-shadow: 0 0 0 4px #02b3e4;
+  box-shadow: 0 0 0 4px #02b3e4;
+  outline: none
+}
+
+.shiba-text-input__input:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+  pointer-events: none
+}
+
+.shiba-text-input__input:required {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.shiba-text-input__input:required:focus {
+  -webkit-box-shadow: 0 0 0 4px #02b3e4;
+  box-shadow: 0 0 0 4px #02b3e4
+}
+
+.shiba-text-input__input::-webkit-input-placeholder {
+  color: #96a0aa
+}
+
+.shiba-text-input__input::-moz-placeholder {
+  color: #96a0aa
+}
+
+.shiba-text-input__input:-ms-input-placeholder {
+  color: #96a0aa
+}
+
+.shiba-text-input__input::-ms-input-placeholder {
+  color: #96a0aa
+}
+
+.shiba-text-input__input::placeholder {
+  color: #96a0aa
+}
+
+.shiba-text-input__label {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2rem;
+  max-width: 40rem;
+  margin-bottom: .5rem;
+  display: block
+}
+
+.shiba-text-input__optional {
+  font-size: .875rem;
+  line-height: 1.5rem;
+  max-width: 30rem;
+  font-weight: 400;
+  color: #657482;
+  margin: 0 .5rem;
+  vertical-align: baseline
+}
+
+.shiba-text-input--error label {
+  color: #501212
+}
+
+.shiba-text-input--error input {
+  margin-bottom: .5rem;
+  border-color: #dd3131
+}
+
+.shiba-text-input--warning label {
+  color: #5c3f04
+}
+
+.shiba-text-input--warning input {
+  margin-bottom: .5rem;
+  border-color: #ffae0c
+}
+
+.shiba-text-input--success label {
+  color: #084627
+}
+
+.shiba-text-input--success input {
+  margin-bottom: .5rem;
+  border-color: 1px solid #96a0aa
+}

@@ -24,8 +24,9 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["./src/*"],
+      "@atoms/*": ["./src/components/atoms/*"],
     },
   },
-  "include": ["src", "src/components/atoms/Button/Button.stories.tsx"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
