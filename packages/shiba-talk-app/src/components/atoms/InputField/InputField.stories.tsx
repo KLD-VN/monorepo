@@ -3,6 +3,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import InputField from '.';
+import FormValidation from '../FormValidation';
 
 export default {
   title: 'ATOMS/InputField',
@@ -68,15 +69,6 @@ NumberMinMaxValue.args = {
   min: 1
 }
 
-export const OptionalLabel = Template.bind({});
-
-OptionalLabel.args = {
-  id: PREFIX_ID,
-  label: "Label",
-  placeholder: "Placeholder",
-  optionalLabel: "Nhãn mác"
-}
-
 export const ReadOnly = Template.bind({});
 
 ReadOnly.args = {
@@ -94,7 +86,8 @@ NumberStep.args = {
   label: "Label",
   placeholder: "Placeholder",
   type: "number",
-  step: 2
+  step: 2,
+  required: true
 }
 
 export const Date = Template.bind({});
@@ -176,4 +169,31 @@ Week.args = {
   label: "Label",
   placeholder: "Placeholder",
   type: "week",
+}
+
+export const SuccessValidation = Template.bind({});
+
+SuccessValidation.args = {
+  id: PREFIX_ID,
+  label: "Label",
+  placeholder: "Placeholder",
+  validation: <FormValidation message={'success'} variant="success" />,
+}
+
+export const WarningValidation = Template.bind({});
+
+WarningValidation.args = {
+  id: PREFIX_ID,
+  label: "Label",
+  placeholder: "Placeholder",
+  validation: <FormValidation message={'warning'} variant="warning" />,
+}
+
+export const ErrorValidation = Template.bind({});
+
+ErrorValidation.args = {
+  id: PREFIX_ID,
+  label: "Label",
+  placeholder: "Placeholder",
+  validation: <FormValidation message={'error'} variant="error" />,
 }

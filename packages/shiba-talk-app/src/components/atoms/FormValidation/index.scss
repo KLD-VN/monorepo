@@ -1,0 +1,59 @@
+@import "@/sass/index.scss";
+
+.shiba-form-validation {
+   border-radius: .25rem;
+   padding: .5rem;
+   font-size: .875rem;
+   line-height: 1.5rem;
+   max-width: 30rem;
+   -ms-flex-align: center;
+   align-items: center;
+   display: -ms-flexbox;
+   display: flex;
+   max-width: 100%
+}
+
+.shiba-form-validation .shiba-icon {
+   margin-right: .5rem;
+   -ms-flex-order: -1;
+   order: -1
+}
+
+.shiba-form-validation .shiba-icon svg {
+   height: 2rem;
+   width: 2rem
+}
+
+.shiba-form-validation--error {
+   background-color: var(--background-error);
+   color: var(--label-error);
+}
+
+.shiba-form-validation--error .shiba-icon {
+   fill: var(--primary-error);
+}
+
+.shiba-form-validation--warning {
+   background-color: var(--background-warning);
+   color: var(--text-warning);
+}
+
+.shiba-form-validation--warning .shiba-icon {
+   fill: var(--warning);
+}
+
+.shiba-form-validation--success {
+   background-color: var(--background-success);
+   color: var(--text-success)
+}
+
+.shiba-form-validation--success .shiba-icon {
+   fill: var(--icon-success);
+}
+
+.shiba-rtl .shiba-form-validation .shiba-icon,
+[dir=rtl] .shiba-form-validation .shiba-icon,
+body[dir=rtl] .shiba-form-validation .shiba-icon {
+   margin-right: 0;
+   margin-left: .5rem
+}

@@ -431,6 +431,8 @@
     --primary-text: #050505;
     --primary-text-on-media: #FFFFFF;
     --primary-web-focus-indicator: #D24294;
+    --primary-border: #1b74e4;
+    --primary-error: #dd3131;
     --progress-ring-neutral-background: rgba(0, 0, 0, 0.2);
     --progress-ring-neutral-foreground: #000000;
     --progress-ring-on-media-background: rgba(255, 255, 255, 0.2);
@@ -466,6 +468,13 @@
     --wash: #E4E6EB;
     --web-wash: #F0F2F5;
     --warning: hsl(40, 89%, 52%);
+    --background-error: #fbe6e6;
+    --background-warning: #fff5e2;
+    --background-success: #e3f8ed;
+    --text-success: #084627;
+    --text-warning: #5c3f04;
+    --text-error: #501212;
+    --icon-success: #15c26b;
     --fb-logo-color: #2D88FF;
     --dialog-anchor-vertical-padding: 56px;
     --header-height: 56px;

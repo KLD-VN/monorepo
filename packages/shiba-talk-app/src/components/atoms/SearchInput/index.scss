@@ -1,0 +1,72 @@
+@import "@/sass/index.scss";
+
+.shiba-search-input {
+   font-family: inherit;
+   box-sizing: border-box;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   position: relative;
+   min-height: 40px;
+   width: 100%;
+   display: flex;
+   background-color: var(--comment-background);
+   min-width: 40px;
+   outline: none;
+   color: var(--primary-text);
+   cursor: default;
+   font-weight: 600;
+   vertical-align: middle;
+
+   &__icon {
+      font-family: inherit;
+      padding-left: 12px;
+      transition-timing-function: linear;
+      display: flex;
+      transition-property: margin-right,opacity,transform;
+      pointer-events: none;
+      white-space: nowrap;
+      align-items: center;
+   }
+
+   input {
+      transition-timing-function: linear;
+      padding-left: 8px;
+      box-sizing: border-box;
+      height: 40px;
+      transition-property: margin-right,opacity,transform;
+      border-bottom-left-radius: 50px;
+      color: var(--primary-text);
+      -webkit-tap-highlight-color: transparent;
+      border-bottom-right-radius: 50px;
+      flex-basis: auto;
+      position: relative;
+      padding-top: 7px;
+      font-size: 0.9375rem;
+      transition-duration: 10000ms;
+      text-align: left;
+      padding-bottom: 9px;
+      min-width: 0;
+      border-top-right-radius: 50px;
+      background-color: transparent;
+      flex-shrink: 1;
+      touch-action: manipulation;
+      padding-right: 8px;
+      flex-grow: 1;
+      border-top-left-radius: 50px;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      outline: none;
+      font-weight: normal;
+      direction: ltr;
+      unicode-bidi: isolate;
+
+      &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      } 
+   }
+}

@@ -1,0 +1,313 @@
+.shiba-icon {
+   height: 2rem;
+   width: 2rem;
+   display: inline-block;
+   fill: currentColor;
+   line-height: 0;
+   stroke: currentColor;
+   vertical-align: middle;
+ 
+   svg {
+     height: 100%;
+     width: 100%;
+     stroke-width: 0;
+   }
+ 
+   &--sm {
+     height: 1.5rem;
+     width: 1.5rem;
+   }
+ 
+   &--lg {
+     height: 2.5rem;
+     width: 2.5rem;
+   }
+ 
+   &--custom {
+     height: 1.75rem;
+     width: 1.75rem;
+   }
+ }
+ 
+ .shiba-color {
+   &--default {
+     color: #65676b !important;
+   }
+ 
+   &--primary {
+     color: var(--primary-button-background);
+   }
+ 
+   &--white {
+     color: #fff !important;
+   }
+ 
+   &--black {
+     color: #000709 !important;
+   }
+ 
+   &--cerulean-darker {
+     color: #014052 !important;
+   }
+ 
+   &--cerulean-dark {
+     color: #017a9b !important;
+   }
+ 
+   &--cerulean {
+     color: #02b3e4 !important;
+   }
+ 
+   &--cerulean-light {
+     color: #53cbed !important;
+   }
+ 
+   &--cerulean-lighter {
+     color: #a4e4f5 !important;
+   }
+ 
+   &--cerulean-lightest {
+     color: #f5fcfe !important;
+   }
+ 
+   &--slate-darker {
+     color: #11161a !important;
+   }
+ 
+   &--slate-dark {
+     color: #1f2932 !important;
+   }
+ 
+   &--slate {
+     color: #2e3d49 !important;
+   }
+ 
+   &--slate-light {
+     color: #6d7780 !important;
+   }
+ 
+   &--slate-lighter {
+     color: #b4b9bd !important;
+   }
+ 
+   &--slate-lightest {
+     color: #f7f7f8 !important;
+   }
+ 
+   &--silver-darker {
+     color: #242a2f !important;
+   }
+ 
+   &--silver-dark {
+     color: #454f58 !important;
+   }
+ 
+   &--silver {
+     color: #657482 !important;
+   }
+ 
+   &--silver-light {
+     color: #96a0aa !important;
+   }
+ 
+   &--silver-lighter {
+     color: #c8cdd2 !important;
+   }
+ 
+   &--silver-lightest {
+     color: #f9f9fa !important;
+   }
+ 
+   &--red-darker {
+     color: #501212 !important;
+   }
+ 
+   &--red-dark {
+     color: #962121 !important;
+   }
+ 
+   &--red {
+     color: #dd3131 !important;
+   }
+ 
+   &--red-light {
+     color: #e87373 !important;
+   }
+ 
+   &--red-lighter {
+     color: #f3b5b5 !important;
+   }
+ 
+   &--red-lightest {
+     color: #fbe6e6 !important;
+   }
+ 
+   &--orange-darker {
+     color: #5c3f04 !important;
+   }
+ 
+   &--orange-dark {
+     color: #9e6c07 !important;
+   }
+ 
+   &--orange {
+     color: #ffae0c !important;
+   }
+ 
+   &--orange-light {
+     color: #ffc85a !important;
+   }
+ 
+   &--orange-lighter {
+     color: #ffe2a8 !important;
+   }
+ 
+   &--orange-lightest {
+     color: #fff5e2 !important;
+   }
+ 
+   &--green-darker {
+     color: #084627 !important;
+   }
+ 
+   &--green-dark {
+     color: #0e8449 !important;
+   }
+ 
+   &--green {
+     color: #15c26b !important;
+   }
+ 
+   &--green-light {
+     color: #60d69a !important;
+   }
+ 
+   &--green-lighter {
+     color: #abe9ca !important;
+   }
+ 
+   &--green-lightest {
+     color: #e3f8ed !important;
+   }
+ 
+   &--blue-darker {
+     color: #0f2b3d !important;
+   }
+ 
+   &--blue-dark {
+     color: #1d5174 !important;
+   }
+ 
+   &--blue {
+     color: #2a77aa !important;
+   }
+ 
+   &--blue-light {
+     color: #6ea3c5 !important;
+   }
+ 
+   &--blue-lighter {
+     color: #b2cee0 !important;
+   }
+ 
+   &--blue-lightest {
+     color: #e5eff5 !important;
+   }
+ 
+   &--purple-darker {
+     color: #391b50 !important;
+   }
+ 
+   &--purple-dark {
+     color: #6c3498 !important;
+   }
+ 
+   &--purple {
+     color: #9f4cdf !important;
+   }
+ 
+   &--purple-light {
+     color: #be85e9 !important;
+   }
+ 
+   &--purple-lighter {
+     color: #dcbff3 !important;
+   }
+ 
+   &--purple-lightest {
+     color: #f3eafb !important;
+   }
+ 
+   &--yellow-darker {
+     color: #554809 !important;
+   }
+ 
+   &--yellow-dark {
+     color: #a88e12 !important;
+   }
+ 
+   &--yellow {
+     color: #ecc81a !important;
+   }
+ 
+   &--yellow-light {
+     color: #f2da63 !important;
+   }
+ 
+   &--yellow-lighter {
+     color: #f8ebad !important;
+   }
+ 
+   &--yellow-lightest {
+     color: #fdf8e4 !important;
+   }
+ 
+   &--teal-darker {
+     color: #014943 !important;
+   }
+ 
+   &--teal-dark {
+     color: #018377 !important;
+   }
+ 
+   &--teal {
+     color: #02ccba !important;
+   }
+ 
+   &--teal-light {
+     color: #53dcd0 !important;
+   }
+ 
+   &--teal-lighter {
+     color: #a4ede6 !important;
+   }
+ 
+   &--teal-lightest {
+     color: #e1f9f7 !important;
+   }
+ 
+   &--magenta-darker {
+     color: #5c1e2f !important;
+   }
+ 
+   &--magenta-dark {
+     color: #ad3959 !important;
+   }
+ 
+   &--magenta {
+     color: #ff5483 !important;
+   }
+ 
+   &--magenta-light {
+     color: #ff8bab !important;
+   }
+ 
+   &--magenta-lighter {
+     color: #ffc1d2 !important;
+   }
+ 
+   &--magenta-lightest {
+     color: #ffeaf0 !important;
+   }
+ }
+ 

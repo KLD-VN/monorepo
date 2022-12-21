@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import './index.scss';
 
 const PREFIX = "shiba-form-validation";
 

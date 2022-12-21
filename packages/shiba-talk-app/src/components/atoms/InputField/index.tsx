@@ -4,7 +4,7 @@ import { FormValidationProps } from "@atoms/FormValidation";
 
 import './index.scss';
 
-export const PREFIX = "shiba-text-input";
+export const PREFIX = "shiba-input-field";
 
 /** InputField Props */
 
@@ -58,12 +58,6 @@ export interface InputFieldProps {
 
   /** Callback when InputField receives a keypress event */
   onKeyDown?(evt?: React.KeyboardEvent<HTMLInputElement>): void;
-
-  /**
-   * Text displayed next to label for non-required fields. Only use this prop to
-   * internationalize the default string
-   */
-  optionalLabel?: string;
 
   /**
    * Regular expression that the InputField's value is checked against.
@@ -127,7 +121,6 @@ const InputField: React.FC<InputFieldProps> = ({
   onChange,
   onFocus,
   onKeyDown,
-  optionalLabel = "Optional",
   pattern,
   placeholder,
   readOnly,
@@ -161,9 +154,6 @@ const InputField: React.FC<InputFieldProps> = ({
     <div className={className}>
       <label className={labelClassName} htmlFor={id}>
         {label}
-        {!required && (
-          <span className={`${PREFIX}__optional`}>{`(${optionalLabel})`}</span>
-        )}
       </label>
       <input
         autoFocus={autoFocus}
