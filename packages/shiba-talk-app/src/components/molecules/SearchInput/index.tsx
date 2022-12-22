@@ -1,7 +1,8 @@
 import React from "react";
 import classNames from "classnames";
 import useDebounce from "@/utils/useDebounce";
-import IconSearch from "../icons/IconSearch";
+
+import {Icon, SearchSVG} from "@atoms";
 
 import './index.scss';
 import '@/sass/index.scss';
@@ -119,44 +120,46 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(({
   }
 
   const [searchValue, setSearchValue] = React.useState('');
-const debouncedSearchValue = useDebounce(searchValue, 500);
+  const debouncedSearchValue = useDebounce(searchValue, 500);
 
-const handleSearchChange = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-  setSearchValue(e.target.value);
-  onSearch
-}, []);
+  const handleSearchChange = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(e.target.value);
+    onSearch
+  }, []);
 
-React.useEffect(() => {
-  onSearch && onSearch(debouncedSearchValue);
-}, [debouncedSearchValue]);
+  React.useEffect(() => {
+    onSearch && onSearch(debouncedSearchValue);
+  }, [debouncedSearchValue]);
 
-return (
-  <div className={className}>
-    <span className={iconClassName}>
-      <IconSearch style={iconStyle}/>
-    </span>
-    <input
-      id={id}
-      autoFocus={autoFocus}
-      autoComplete={autoComplete}
-      className={className}
-      defaultValue={defaultValue}
-      disabled={disabled}
-      value={value}
-      type={type}
-      role={role}
-      placeholder={placeholder}
-      name={name}
-      onBlur={onBlur}
-      onChange={handleSearchChange}
-      onFocus={onFocus}
-      onKeyDown={onKeyDown}
-      aria-expanded={ariaExpanded}
-      aria-label={ariaLabel}
-      spellCheck={spellCheck}
-    />
-  </div>
-);
+  return (
+    <div className={className}>
+      <span className={iconClassName}>
+        <Icon>
+          <SearchSVG />
+        </Icon>
+      </span>
+      <input
+        id={id}
+        autoFocus={autoFocus}
+        autoComplete={autoComplete}
+        className={className}
+        defaultValue={defaultValue}
+        disabled={disabled}
+        value={value}
+        type={type}
+        role={role}
+        placeholder={placeholder}
+        name={name}
+        onBlur={onBlur}
+        onChange={handleSearchChange}
+        onFocus={onFocus}
+        onKeyDown={onKeyDown}
+        aria-expanded={ariaExpanded}
+        aria-label={ariaLabel}
+        spellCheck={spellCheck}
+      />
+    </div>
+  );
 });
 
 export default SearchInput;

@@ -5,6 +5,7 @@ import "./index.scss"
 
 const PREFIX = "shiba-circle-image"
 
+/** Props shared across multiple button type */
 export interface CircleImageProps {
   /** `href` for link destination */
   href: string

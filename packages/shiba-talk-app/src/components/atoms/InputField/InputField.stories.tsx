@@ -6,7 +6,7 @@ import InputField from '.';
 import FormValidation from '../FormValidation';
 
 export default {
-  title: 'ATOMS/InputField',
+  title: 'Design System/Atoms/InputField',
   component: InputField,
 } as ComponentMeta<typeof InputField>;
 

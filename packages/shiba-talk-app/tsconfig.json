@@ -24,6 +24,7 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["./src/*"],
+      "@atoms": ["./src/components/atoms"],
       "@atoms/*": ["./src/components/atoms/*"],
     },
   },

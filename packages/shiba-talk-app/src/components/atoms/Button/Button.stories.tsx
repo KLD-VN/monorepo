@@ -3,14 +3,14 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button from '.';
-import CircleImage from "@/components/atoms/Image/CircleImage";
+import CircleImage from "@/components/atoms/CircleImage";
 
 export default {
   /* 👇 The title prop is optional.
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'ATOMS/Button',
+  title: 'Design System/Atoms/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 

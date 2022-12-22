@@ -1,0 +1,16 @@
+.vds-logo__icon {
+   fill: #02b3e4
+}
+
+.vds-logo__title {
+   fill: #2e3d49
+}
+
+.vds-logo--inverted .vds-logo__icon,
+.vds-logo--inverted .vds-logo__title {
+   fill: #fff
+}
+
+.vds-logo--clickable:hover {
+   cursor: pointer
+}
