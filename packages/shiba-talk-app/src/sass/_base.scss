@@ -86,6 +86,11 @@ ul {
   padding-inline-start: 40px;
 }
 
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 div {
   display: block;
 }

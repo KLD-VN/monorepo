@@ -1,0 +1,21 @@
+.shiba-title {
+   max-width: 100%;
+   min-width: 0px;
+   font-size: 1.0625rem;
+
+   &__content {
+      font-size: 1.0625rem;
+      max-width: 100%;
+      min-width: 0;
+      word-wrap: break-word;
+      font-weight: 600;
+      color: var(--primary-text);
+      line-height: 1.1765;
+      font-weight: 600;
+      color: (--primary-text);
+      outline: none;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.1765;
+      word-break: break-work;
+   }
+}

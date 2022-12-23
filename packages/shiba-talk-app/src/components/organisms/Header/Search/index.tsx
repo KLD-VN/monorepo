@@ -33,6 +33,9 @@ const HeaderSearch: React.FC<{}> = () => {
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
+            {/* {isFocus && (
+              <SearchSuggestions />
+            )} */}
           </div>
         </div>
       </div>

@@ -1,0 +1,84 @@
+.shiba-search-result {
+
+   &__container {
+      font-family: inherit;
+      flex-direction: column;
+      display: flex;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 0;
+      perspective: 1px;
+      perspective-origin: right top;
+      transform-style: preserve-3d;
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+   }
+
+   &__content {
+      font-family: inherit;
+      flex-direction: column;
+      display: flex;
+      overflow-y: hidden;
+      position: relative;
+      z-index: 0;
+      perspective: 1px;
+      perspective-origin: right top;
+      transform-style: preserve-3d;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+   }
+
+   &__item {
+      font-family: inherit;
+      flex-direction: column;
+      display: flex;
+      position: relative;
+      flex-grow: 1;
+   }
+}
+
+.shiba-scroll {
+
+   &__layout {
+      display: block;
+      height: 452px;
+      right: 0px;
+      font-family: inherit;
+      width: 16px;
+      position: absolute;
+      opacity: 0;
+      transition-timing-function: ease;
+      transition-duration: .5s;
+      background-color: var(--divider);
+   }
+
+   &__scrollbar {
+      display: block;
+      height: 242.392px;
+      right: 0px;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1) scale(1.36556) translateZ(-0.365559px) translateZ(-2px);
+
+      font-family: inherit;
+      padding-top: 0;
+      width: 16px;
+      padding-bottom: 0;
+      position: absolute;
+      box-sizing: border-box;
+      top: 0;
+      transition-timing-function: ease;
+      pointer-events: none;
+      transform-origin: right, top;
+      padding-left: 4px;
+      transition-duration: .3s;
+      transition-property: opacity;
+      padding-right: 4px;  
+   }
+
+   &__bar {
+      font-family: inherit;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background-color: var(--scroll-thumb);
+   }
+}

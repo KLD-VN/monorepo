@@ -1,0 +1,14 @@
+.shiba-list {
+   flex-direction: column;
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   flex-grow: 1;
+
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+}
