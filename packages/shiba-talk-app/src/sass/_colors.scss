@@ -1,5 +1,11 @@
 :root {
    /*** $ ***/
+   --shiba-color-default: #65676b;
+   --shiba-color-primary: #050505;
+   --shiba-color-white: #fff;
+   /*** /$ ***/
+
+   /*** $ ***/
    --icon-default: #65676b;
 
    --icon-slate: #2e3d49;
@@ -119,4 +125,20 @@
    --icon-yellow-darker: #998200;
    /*** /$ ***/
 
+}
+
+.shiba-color{
+   color: var(--shiba-color-default);
+
+   &--default {
+      color: var(--shiba-color-default);
+   }
+
+   &--primary {
+      color: var(--shiba-color-primary);
+   }
+
+   &--white {
+      color: var(--shiba-color-white);
+   }
 }

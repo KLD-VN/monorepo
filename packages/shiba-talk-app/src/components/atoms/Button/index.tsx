@@ -54,23 +54,14 @@ export interface ButtonProps extends ButtonBaseProps {
 
   /**
    * Icon-only button with visually hidden text
-   *
-   * @deprecated Use RoundButton instead
+   
    */
   iconOnly?: boolean;
-
-  /**
-   * Align the icon to the right
-   *
-   * @deprecated Use `iconRight` instead
-   */
-  alignRight?: boolean;
 }
 
 /** Buttons trigger actions throughout the interface. They can also be used for navigation. */
 
 const Button: React.FC<ButtonProps> = ({
-  alignRight,
   label,
   disabled,
   external,

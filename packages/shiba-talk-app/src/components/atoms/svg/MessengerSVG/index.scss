@@ -1,0 +1,8 @@
+@import "@/sass/index.scss";
+
+.shiba-messenger-svg {
+    display: block;
+    transition-property: color, fill, stroke;
+    transition-timing-function: var(--fds-soft);
+    transition-duration: var(--fds-fast);
+}

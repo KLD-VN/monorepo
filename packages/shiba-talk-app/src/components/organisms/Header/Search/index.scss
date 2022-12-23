@@ -1,0 +1,76 @@
+@import "@/sass/index.scss";
+
+.shiba-header-search {
+  height: var(--header-height);
+  box-sizing: border-box;
+  display: flex;
+  left: var(--global-panel-width-expanded);
+  font-family: inherit;
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+
+  @media (min-width: 900px) and (max-width: 1159px) {
+    left: 64px;
+    right: 64px;
+  }
+
+  @media (max-width: 899px) {
+    left: 64px;
+    right: unset;
+  }
+
+  @media (max-width: 648px) {
+    z-index: 4;
+  }
+
+  &__container {
+    font-family: inherit;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    padding-right: 32px;
+    padding-left: 32px;
+    min-width: 0;
+    flex-basis: 744px;
+    min-width: 0;
+
+    @media (max-width: 1159px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__wrap {
+    font-family: inherit;
+    max-width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    &--default {
+      @media (max-width: 899px) {
+        max-width: 40px;
+      }
+    }
+
+    &--focused {
+      @media (min-width: 577px) and (max-width: 899px) {
+        max-width: 320px;
+      }
+    }
+  }
+
+  &__content {
+    font-family: inherit;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+  }
+}

@@ -55,6 +55,8 @@ export interface InputProps {
   /** Callback when TextInput receives a keypress event */
   onKeyDown?(evt?: React.KeyboardEvent<HTMLInputElement>): void
 
+  /** Callback when InputField clicked */
+  onClick?(evt?: React.MouseEvent<HTMLInputElement>): void
   /**
    * Regular expression that the TextInput's value is checked against.
    * Use [html5pattern](http://html5pattern.com/) to create a RegEx
@@ -97,10 +99,13 @@ export interface InputProps {
     | "week"
     | "search"
 
+  /** Indicates whether an element is expanded or collapsed */
   ariaExpanded?: boolean
 
+  /** Provides an accessible label for an element */
   ariaLabel?: string
 
+  /** Indicates whether an element's content should be checked for spelling errors */
   spellCheck?: boolean
 
   /** Controlled TextInput value (for controlled components). Requires `onChange` handler */
@@ -120,6 +125,7 @@ const Input: React.FC<InputProps> = ({
   onChange,
   onFocus,
   onKeyDown,
+  onClick,
   pattern,
   placeholder,
   readOnly,
@@ -134,6 +140,10 @@ const Input: React.FC<InputProps> = ({
 }) => {
   const className = classNames(PREFIX)
 
+  const handleOnChange = React.useCallback((event) => {
+    onChange && onChange(event)
+  }, [])
+
   return (
     <input
       autoFocus={autoFocus}
@@ -146,7 +156,7 @@ const Input: React.FC<InputProps> = ({
       min={min}
       name={name}
       onBlur={onBlur}
-      onChange={onChange}
+      onChange={handleOnChange}
       onFocus={onFocus}
       onKeyDown={onKeyDown}
       pattern={pattern}

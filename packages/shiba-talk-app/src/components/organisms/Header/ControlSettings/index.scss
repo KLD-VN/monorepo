@@ -1,0 +1,15 @@
+@import "@/sass/index.scss";
+
+.shiba-header-control-settings {
+  height: var(--header-height);
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-right: 16px;
+  z-index: 3;
+  padding-left: 4px;
+
+  @media (min-width: 1260px) {
+    width: 320px;
+  }
+}

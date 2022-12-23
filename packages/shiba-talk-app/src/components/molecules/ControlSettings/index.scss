@@ -1,0 +1,39 @@
+@import "@/sass/index.scss";
+
+.shiba-control-settings {
+    font-family: inherit;
+    flex-direction: row-reverse;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    height: var(--header-height);
+    align-items:center;
+  
+    &__messenger {
+      margin-right: 8px;
+    }
+
+    &__notification {
+      margin-right: 8px;
+    }
+
+    &__personalization {
+      font-family: inherit;
+      align-content: inherit;
+      flex-basis: inherit;
+      max-height: inherit;
+      flex-grow: inherit;
+      flex-shrink: inherit;
+      max-width: inherit;
+      flex-direction: inherit;
+      width: inherit;
+      min-height: inherit;
+      min-width: inherit;
+      justify-content: inherit;
+      height: inherit;
+      align-self: inherit;
+      display: inherit;
+      align-items: inherit;
+    }
+  }
+  

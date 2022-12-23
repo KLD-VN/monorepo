@@ -1,0 +1,20 @@
+@import "@/sass/index.scss";
+
+.shiba-header-logo {
+  font-family: inherit;
+  box-sizing: border-box;
+  max-width: 100vw;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 40px;
+  margin-left: 16px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: var(--header-height);
+
+  @media (min-width: 1260px) {
+    width: 320px;
+  }
+}

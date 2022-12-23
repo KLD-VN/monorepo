@@ -1,3 +1,5 @@
+@import "./root";
+
 *,
 :after,
 :before {
@@ -12,13 +14,12 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-family-apple) + var(--font-family-code) +
+    var(--font-family-default) + var(--font-family-segoe);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f0f2f5;
-  color: #1c1e21;
+  background: var(--shiba-white);
+  color: var(--shiba-gray-100);
   direction: ltr;
   line-height: 1.34;
   width: 100%;
@@ -55,14 +56,6 @@ body em {
   font-style: italic;
 }
 
-body ::-moz-selection {
-  background: rgba(164, 228, 245, 0.4);
-}
-
-body ::selection {
-  background: rgba(164, 228, 245, 0.4);
-}
-
 body,
 button,
 input,
@@ -72,18 +65,6 @@ td,
 textarea {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-}
-
-blockquote,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre {
-  // margin-bottom: 1.5rem;
 }
 
 code {
@@ -109,3 +90,13 @@ div {
   display: block;
 }
 
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+[type="svg"] {
+  fill: currentcolor;
+  height: 20;
+  width: 20;
+}

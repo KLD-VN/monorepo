@@ -12,7 +12,7 @@ export default {
 
 const Template: ComponentStory<typeof InputField> = (args) => <InputField {...args} />;
 
-const PREFIX_ID = "shiba-text-input-id"
+const PREFIX_ID = "shiba-input-field-id"
 
 export const Default = Template.bind({});
 

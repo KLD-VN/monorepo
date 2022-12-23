@@ -1,16 +1,19 @@
+@import "@/sass/index.scss";
+
 .shiba-input {
-  border-radius: 0.25rem;
-  border: 1px solid #96a0aa;
+  border-radius: 0.5rem;
+  border: 1px solid var(--divider);
   height: 3rem;
   padding: 0.625rem 1rem;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   width: 100%;
+  color: var(--primary-text);
 
   &:focus {
-    -webkit-box-shadow: 0 0 0 4px #02b3e4;
-    box-shadow: 0 0 0 4px #02b3e4;
+    border-color: var(--primary-border);
+    box-shadow: 0 0 0 2px var(--highlight-bg);
     outline: none;
   }
 
@@ -25,19 +28,14 @@
     box-shadow: none;
   }
 
-  &:required:focus {
-    -webkit-box-shadow: 0 0 0 4px #02b3e4;
-    box-shadow: 0 0 0 4px #02b3e4;
-  }
-
   &::-webkit-input-placeholder,
   &::-moz-placeholder,
   &:-ms-input-placeholder,
   &::placeholder {
-    color: #96a0aa;
+    color: var(--placeholder-text);
   }
 
   &::placeholder {
-    color: #96a0aa;
+    color: var(--placeholder-text);
   }
 }
