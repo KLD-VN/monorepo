@@ -1,25 +1,32 @@
 import Link from "@/components/atoms/Link";
 import List from "@/components/atoms/List";
 import ListItem from "@/components/atoms/ListItem";
+import Overlay from "@/components/atoms/Overlay";
 import Title from "@/components/atoms/Title";
 import React from "react";
 import "./index.scss";
 
-const PREFIX = "shiba-search-result";
+const PREFIX = "shiba-card-search-result";
 const PREFIX_SCROLL = "shiba-scroll";
 
 const SearchResult: React.FC<{}> = () => {
 
    return (
-      <div className={PREFIX}>
-         <div className={`${PREFIX}__container`}>
-               <div className={`${PREFIX}__content`}>
+      <div>
+         <div className={PREFIX}>
+               <div className={`${PREFIX}__scroll`}>
                   {/* --$-- */}
                   <div className={`${PREFIX}__item`}>
                      <List>
                         <ListItem>
                            <Title> Tìm kiếm gần đây </Title>
-                           <Link href="https://google.com" children="Chỉnh sửa"/>
+                           <Link href="https://google.com">
+                              <span style={{maxWidth: "100%"}}>
+                              Chỉnh sửa
+                              </span>
+                              <Overlay />
+                              
+                           </Link>
                         </ListItem>
                         <List>
                            <ListItem> Item 1 </ListItem>

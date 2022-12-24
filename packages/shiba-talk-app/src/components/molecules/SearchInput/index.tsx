@@ -61,15 +61,15 @@ export interface SearchInputProps {
    * cross-browser
    */
   type?:
-    | "date"
-    | "datetime-local"
-    | "month"
-    | "number"
-    | "tel"
-    | "text"
-    | "time"
-    | "week"
-    | "search";
+  | "date"
+  | "datetime-local"
+  | "month"
+  | "number"
+  | "tel"
+  | "text"
+  | "time"
+  | "week"
+  | "search";
 
   /** Indicates whether the element is expanded or collapsed */
   ariaExpanded?: boolean;
@@ -147,12 +147,15 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(
     return (
       <div className={className}>
         <label className={`${PREFIX}__label`}>
+          {/* --$-- */}
           <span className={iconClassName}>
             <Icon style={iconStyle}>
               <SearchSVG />
             </Icon>
           </span>
+          {/* --/$-- */}
 
+          {/* --$-- */}
           <Input
             id={PREFIX_ID}
             type="search"
@@ -164,6 +167,7 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(
             onChange={handleSearchChange}
             autoComplete="off"
           />
+          {/* --/$-- */}
         </label>
       </div>
     );

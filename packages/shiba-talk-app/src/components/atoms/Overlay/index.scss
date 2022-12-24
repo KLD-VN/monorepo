@@ -1,0 +1,16 @@
+@import "@/sass/index.scss";
+
+.shiba-overlay {
+   font-family: inherit;
+   position: absolute;
+   opacity: 0;
+   pointer-events: none;
+   background-color: var(--hover-overlay);
+   transition-duration: var(--fds-duration-extra-extra-short-out);
+   transition-timing-function: var(--fds-animation-fade-out);
+   transition-property: opacity;
+
+   &--active {
+      opacity: 1;
+   }
+}

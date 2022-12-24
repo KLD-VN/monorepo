@@ -1,5 +1,10 @@
-.shiba-search-result {
+@import "@/sass/index.scss";
 
+.shiba-card-search-result {
+   font-family: inherit;
+   padding-left: 8px;
+   flex-direction: column;
+   box-sizing: border-box;
    &__container {
       font-family: inherit;
       flex-direction: column;
