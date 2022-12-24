@@ -109,15 +109,6 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(
 
     const iconClassName = classNames(`${PREFIX}__icon`);
 
-    const iconStyle: React.CSSProperties = {
-      height: "1rem",
-      width: "1rem",
-      transitionDuration: "var(--fds-fast)",
-      transitionTimingFunction: "var(--fds-soft)",
-      transitionProperty: "fill, stroke",
-      fill: "var(--secondary-icon)",
-    };
-
     const [searchValue, setSearchValue] = React.useState("");
     const debouncedSearchValue = useDebounce(searchValue, 500);
 
@@ -173,5 +164,14 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(
     );
   }
 );
+
+const iconStyle: React.CSSProperties = {
+  height: "1rem",
+  width: "1rem",
+  transitionDuration: "var(--fds-fast)",
+  transitionTimingFunction: "var(--fds-soft)",
+  transitionProperty: "fill, stroke",
+  fill: "var(--secondary-icon)",
+};
 
 export default SearchInput;

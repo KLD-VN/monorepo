@@ -18,16 +18,19 @@ const SearchResult: React.FC<{}> = () => {
                   {/* --$-- */}
                   <div className={`${PREFIX}__item`}>
                      <List>
+                        {/* --$-- */}
                         <ListItem>
                            <Title> Tìm kiếm gần đây </Title>
                            <Link href="https://google.com">
                               <span style={{maxWidth: "100%"}}>
                               Chỉnh sửa
                               </span>
-                              <Overlay />
-                              
+                              <Overlay />                            
                            </Link>
                         </ListItem>
+                        {/* --/$-- */}
+
+                        {/* --$-- */}
                         <List>
                            <ListItem> Item 1 </ListItem>
                            <ListItem> Item 2 </ListItem>
@@ -35,6 +38,7 @@ const SearchResult: React.FC<{}> = () => {
                            <ListItem> Item 4 </ListItem>
                            <ListItem> Item 5 </ListItem>
                         </List>
+                        {/* --/$-- */}
                      </List>
                   </div>
                   {/* --/$-- */}

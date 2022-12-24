@@ -1,0 +1,181 @@
+.shiba-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.shiba-flex--center {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.shiba-flex--full {
+    height: 100%;
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.shiba-flex--inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.shiba-flex--direction-row {
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.shiba-flex--direction-column {
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.shiba-flex--direction-row-reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.shiba-flex--direction-column-reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+}
+
+.shiba-flex--align-start {
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.shiba-flex--align-end {
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.shiba-flex--align-center {
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.shiba-flex--align-baseline {
+    -ms-flex-align: baseline;
+    align-items: baseline
+}
+
+.shiba-flex--align-stretch {
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.shiba-flex--justify-start {
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.shiba-flex--justify-end {
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.shiba-flex--justify-center {
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.shiba-flex--justify-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.shiba-flex--justify-between {
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.shiba-flex--justify-evenly {
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly
+}
+
+.shiba-flex--justify-stretch>.shiba-flex__item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.shiba-flex--spacing-half {
+    margin-bottom: -.25rem;
+    margin-right: -.25rem
+}
+
+.shiba-flex--spacing-half>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: .25rem solid transparent;
+    border-right: .25rem solid transparent
+}
+
+.shiba-flex--spacing-1x {
+    margin-bottom: -.5rem;
+    margin-right: -.5rem
+}
+
+.shiba-flex--spacing-1x>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: .5rem solid transparent;
+    border-right: .5rem solid transparent
+}
+
+.shiba-flex--spacing-2x {
+    margin-bottom: -1rem;
+    margin-right: -1rem
+}
+
+.shiba-flex--spacing-2x>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid transparent
+}
+
+.shiba-flex--spacing-3x {
+    margin-bottom: -1.5rem;
+    margin-right: -1.5rem
+}
+
+.shiba-flex--spacing-3x>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent
+}
+
+.shiba-flex--spacing-4x {
+    margin-bottom: -2rem;
+    margin-right: -2rem
+}
+
+.shiba-flex--spacing-4x>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: 2rem solid transparent;
+    border-right: 2rem solid transparent
+}
+
+.shiba-flex--spacing-6x {
+    margin-bottom: -3rem;
+    margin-right: -3rem
+}
+
+.shiba-flex--spacing-6x>.shiba-flex__item {
+    background-clip: padding-box;
+    border-bottom: 3rem solid transparent;
+    border-right: 3rem solid transparent
+}
+
+.shiba-flex--wrap-none {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+.shiba-flex--wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse
+}
