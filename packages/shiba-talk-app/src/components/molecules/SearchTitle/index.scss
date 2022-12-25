@@ -1,4 +1,151 @@
+@import "@/sass/index.scss";
+
 .shiba-search-title {
+
     font-family: inherit;
-    margin-bottom: 8px;
+
+    &__title {
+        font-family: inherit;
+        box-sizing: border-box;
+        display: flex;
+        flex-basis: 0px;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 100%;
+        min-width: 0px;
+        position: relative;
+        z-index: 0;
+
+        .shiba-title {
+            font-family: inherit;
+            display: block;
+            max-width: 100%;
+            min-width: 0px;
+
+            span {
+                font-family: inherit;
+                max-width: 100%;
+                min-width: 0px;
+            }
+        }
+    }
+
+    &__edit {
+        font-family: inherit;
+        align-self: flex-start;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: 8px;
+        max-width: 100%;
+        min-width: 0px;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__edit-container {
+        font-family: inherit;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__edit-space {
+        font-family: inherit;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        min-width: 0px;
+        position: relative;
+        z-index: 0;
+        visibility: hidden;
+        width: 0px;
+    }
+
+    &__edit-content {
+        font-family: inherit;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        max-width: 100%;
+        min-width: 0px;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__edit-wrap {
+        font-family: inherit;
+        align-items: stretch;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 0;
+
+        .shiba-link {
+            font-family: inherit;
+            align-items: stretch;
+            box-sizing: border-box;
+            display: block;
+            flex-basis: auto;
+            flex-direction: row;
+            flex-shrink: 0;
+            margin: 0;
+            min-height: 0px;
+            min-width: 0px;
+            padding: 0;
+            z-index: 0;
+            position: relative;
+        }
+    }
+
+    &__edit-span-wrap {
+        font-family: inherit;
+        font-size: .9375rem;
+        max-width: 100%;
+        min-width: 0;
+        word-wrap: break-word;
+        line-height: 1.3333;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        color: var(--blue-link);
+        word-break: break-word;
+
+    }
+
+    &__edit-span-content {
+        font-family: inherit;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        display: block;
+        position: relative;
+        overflow-y: hidden;
+        font-size: .9375rem;
+        word-wrap: break-word;
+        line-height: 1.3333;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        color: var(--blue-link);
+        word-break: break-word;
+    }
+
+    &__edit-span-overlay {
+
+    }
+
 }

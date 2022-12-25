@@ -1,8 +1,8 @@
 import React from "react";
-import "./index.scss";
-import Flex from "@/components/atoms/Flex";
-import Space from "@/components/atoms/Space";
 import Link from "@/components/atoms/Link";
+import Title from "@/components/atoms/Title";
+import SearchTitleLayout from "./Layout";
+import "./index.scss";
 
 const PREFIX = "shiba-search-title";
 
@@ -15,14 +15,36 @@ const SearchTitle: React.FC<SearchTitleProps> = ({
   children,
 }: SearchTitleProps) => {
   return (
-    <div className={PREFIX}>
-      <Flex direction="row" justify="between">
-        <Flex spacing="half">
-          <Space type="inline">Search</Space>
-          <Link href="/">Edit</Link>
-        </Flex>
-      </Flex>
-    </div>
+    <SearchTitleLayout>
+      {/* --$-- */}
+      <div className={`${PREFIX}__title`}>
+        <Title size="h1" color="primary" weight="bold">
+          Tìm kiếm gần đây
+        </Title>
+      </div>
+      {/* --/$-- */}
+
+      {/* --$-- */}
+      <div className={`${PREFIX}__edit`}>
+        <div className={`${PREFIX}__edit__container`}>
+          <div className={`${PREFIX}__edit-space`}>
+          </div>
+          <div className={`${PREFIX}__edit-content`}>
+            <div className={`${PREFIX}__edit-wrap`}>
+              <Link href="/search/edit">
+                <span className={`${PREFIX}__edit-span-wrap`}>
+                  <span className={`${PREFIX}__edit-span-content`}>
+                    Chỉnh sửa
+                  </span>
+                </span>
+                <div className={`${PREFIX}__edit-span-overlay`}></div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --/$-- */}
+    </SearchTitleLayout>
   );
 };
 
