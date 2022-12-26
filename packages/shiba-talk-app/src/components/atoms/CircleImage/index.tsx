@@ -29,7 +29,7 @@ const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
         }}
       >
         <mask id="person">
-          <circle cx="14" cy="14" fill="white" r="14"></circle>
+          <circle cx={Number(width)/2} cy={Number(width)/2} fill="white" r={Number(width)/2}></circle>
         </mask>
         <g mask="url(#person)">
           <image

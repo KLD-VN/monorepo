@@ -26,7 +26,7 @@ const ControlSettings: React.FC<{}> = () => {
         <NotificationSVG color="primary" />
       </Icon>
     )
-  const personalIcon = <CircleImage width="28px" height="28px" href={href} />;
+  const personalIcon = <CircleImage width="28" height="28" href={href} />;
 
   const messenger = (
     <div className={`${PREFIX}__messenger`}>
