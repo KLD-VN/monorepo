@@ -58,7 +58,7 @@
       border-bottom-right-radius: 50px;
       -webkit-tap-highlight-color: transparent;
       outline: none;
-  
+
       @media (max-width: 820px) {
         cursor: pointer;
         padding-left: 32px;
@@ -68,7 +68,7 @@
           background-color: var(--hover-overlay);
         }
       }
-  
+
       &:focus {
         -webkit-box-shadow: none;
         box-shadow: none;

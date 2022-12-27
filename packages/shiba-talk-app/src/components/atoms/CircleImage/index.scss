@@ -1,12 +1,6 @@
 @import "@/sass/index.scss";
 
 .shiba-circle-image {
-  height: 28px;
-
-  image {
-    overflow: hidden;
-  }
-
   &__svg {
     &__circle {
       stroke-width: 2;

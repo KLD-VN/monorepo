@@ -1,0 +1,280 @@
+@import "@/sass/index.scss";
+
+.shiba-search-item {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  cursor: pointer;
+  position: relative;
+  overflow-y: hidden;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  margin: 0;
+  text-align: -webkit-match-parent;
+
+  &:hover {
+    background-color: var(--media-hover);
+  }
+
+  .shiba-link {
+    font-family: inherit;
+    padding: 0;
+    flex-basis: auto;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-width: 0;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    flex-shrink: 0;
+    z-index: 0;
+    text-decoration: none;
+    border-color: var(--always-dark-overlay);
+    background-color: transparent;
+    touch-action: manipulation;
+    list-style: none;
+    margin: 0;
+    -webkit-user-select: none;
+    border-radius: inherit;
+    outline-style: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-align: inherit;
+  }
+
+  &__wrap {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    min-width: 0;
+    box-sizing: border-box;
+    z-index: 0;
+    margin: -6px;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-align: inherit;
+  }
+
+  /** --$-- */
+
+  &__image-padding {
+    font-family: inherit;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    z-index: 0;
+    padding: 6px;
+    text-align: inherit;
+  }
+
+  &__image-wrap {
+    font-family: inherit;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .shiba-circle-image {
+    font-family: inherit;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    vertical-align: bottom;
+
+    svg {
+      vertical-align: bottom;
+    }
+
+    &__svg {
+      transform-origin: 0px 0px;
+
+      &__circle {
+        stroke: var(--media-inner-border);
+      }
+    }
+  }
+
+  /** --/$-- */
+
+  /** --$-- */
+
+  &__title-padding {
+    font-family: inherit;
+    flex-direction: 1;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    z-index: 0;
+    padding: 6px;
+    flex-basis: 0px;
+  }
+
+  &__title-wrap {
+    font-family: inherit;
+    flex-direction: column;
+    display: flex;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  &__title-margin-top-bottom {
+    font-family: inherit;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  &__title-box {
+    font-family: inherit;
+    font-size: 0.9375rem;
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    word-wrap: break-word;
+    text-align: left;
+    color: var(--primary-text);
+    line-height: 1.3333;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    word-break: break-word;
+    unicode-bidi: isolate;
+
+    &::before {
+      margin-top: -4px;
+      display: block;
+      content: "";
+      height: 0;
+    }
+
+    &::after {
+      margin-bottom: -4px;
+      display: block;
+      content: "";
+      height: 0;
+    }
+  }
+
+  &__title-content {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-family: inherit;
+    overflow-x: hidden;
+    position: relative;
+    font-size: 0.9375rem;
+    word-wrap: break-word;
+    text-align: left;
+    color: var(--primary-text);
+    line-height: 1.3333;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    word-break: break-word;
+  }
+  /** --/$-- */
+
+  /** --$-- */
+
+  &__delete {
+    font-family: inherit;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    z-index: 0;
+    padding: 6px;
+  }
+
+  &__delete-wrap {
+    font-family: inherit;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__delete-content {
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+    flex-direction: row;
+    position: relative;
+    border-style: solid;
+    min-width: 0;
+    border-width: 0;
+    min-height: 0;
+    align-items: stretch;
+    z-index: 0;
+    text-decoration: none;
+    display: inline-flex;
+    border-color: var(--always-dark-overlay);
+    background-color: transparent;
+    touch-action: manipulation;
+    list-style: none;
+    margin: 0;
+    user-select: none;
+    border-radius: inherit;
+    vertical-align: bottom;
+    outline: none;
+    text-align: inherit;
+
+    &::after {
+      border-radius: 50%;
+      z-index: 1;
+      border-radius: 50%;
+      bottom: -8px;
+      left: -8px;
+      top: -8px;
+      right: -8px;
+      content: "";
+      position: absolute;
+    }
+  }
+
+  .shiba-icon {
+    -webkit-filter: var(--filter-secondary-icon);
+    vertical-align: -0.25rem;
+    font-style: italic;
+    cursor: pointer;
+    list-style: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-align: inherit;
+  }
+
+  &__overlay {
+    inset: -8px;
+    font-family: inherit;
+    position: absolute;
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: var(--hover-overlay);
+    transition-duration: var(--fds-duration-extra-extra-short-out);
+    transition-timing-function: var(--fds-animation-fade-out);
+    transition-property: opacity;
+    cursor: pointer;
+    list-style: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-align: inherit;
+  }
+
+  /** --/$-- */
+}

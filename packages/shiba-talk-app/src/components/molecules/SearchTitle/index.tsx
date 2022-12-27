@@ -19,9 +19,7 @@ const SearchTitle: React.FC<SearchTitleProps> = ({
       {/* --$-- */}
       <div className={`${PREFIX}__title`}>
         <Title size="h1" color="primary" weight="bold">
-          <span className={`${PREFIX}__title-wrap`}>
-            Tìm kiếm gần đây
-          </span>
+          <span className={`${PREFIX}__title-wrap`}>Tìm kiếm gần đây</span>
         </Title>
       </div>
       {/* --/$-- */}
@@ -29,9 +27,7 @@ const SearchTitle: React.FC<SearchTitleProps> = ({
       {/* --$-- */}
       <div className={`${PREFIX}__edit`}>
         <div className={`${PREFIX}__edit-container`}>
-          <div className={`${PREFIX}__edit-space`}>
-            &nbsp;
-          </div>
+          <div className={`${PREFIX}__edit-space`}>&nbsp;</div>
           <div className={`${PREFIX}__edit-content`}>
             <div className={`${PREFIX}__edit-wrap`}>
               <Link href="/search/edit">

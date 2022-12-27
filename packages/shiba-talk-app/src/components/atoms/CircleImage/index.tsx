@@ -1,41 +1,52 @@
-import React from "react"
+import React from "react";
 
 // style
-import "./index.scss"
+import "./index.scss";
 
-const PREFIX = "shiba-circle-image"
+const PREFIX = "shiba-circle-image";
 
 /** Props shared across multiple button type */
 export interface CircleImageProps {
   /** `href` for link destination */
-  href: string
+  href: string;
 
   /** Width of the image, in pixels or percentage */
-  width: string
+  width: string;
 
   /** Height of the image, in pixels or percentage */
-  height: string
+  height: string;
 }
 
 const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
+  console.log('height: ', height)
   return (
-    <div className={PREFIX}>
+    <div
+      className={PREFIX}
+      style={{
+        height: height + "px"
+      }}
+    >
       <svg
         className={`${PREFIX}__svg`}
         role="none"
         style={{
-          width: width,
-          height: height
+          width: width + "px",
+          height: height + "px",
         }}
       >
         <mask id="person">
-          <circle cx={Number(width)/2} cy={Number(width)/2} fill="white" r={Number(width)/2}></circle>
+          <circle
+            cx={Number(width) / 2}
+            cy={Number(width) / 2}
+            fill="white"
+            r={Number(width) / 2}
+          ></circle>
         </mask>
         <g mask="url(#person)">
           <image
             style={{
-              width: width,
-              height: height
+              width: width + "px",
+              height: height + "px",
             }}
             x="0"
             y="0"
@@ -46,14 +57,14 @@ const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
           ></image>
           <circle
             className={`${PREFIX}__svg__circle`}
-            cx="14"
-            cy="14"
-            r="14"
+            cx={Number(width) / 2}
+            cy={Number(width) / 2}
+            r={Number(width) / 2}
           ></circle>
         </g>
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default CircleImage
+export default CircleImage;

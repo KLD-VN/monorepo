@@ -1,2 +1,1 @@
-export {default as ControlSettings} from './ControlSettings';
-
+export { default as ControlSettings } from "./ControlSettings";
