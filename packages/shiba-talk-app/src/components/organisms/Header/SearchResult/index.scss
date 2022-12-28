@@ -2,10 +2,17 @@
 
 .shiba-card-search-result {
    font-family: inherit;
-   padding-left: 8px;
    flex-direction: column;
+   display: flex;
+   padding: 8px;
+   border-radius: 8px;
    box-sizing: border-box;
-   &__container {
+   background-color: var(--card-background);
+   max-height: calc(100vh - 80px);
+   box-shadow: 0 2px 12px var(--shadow-2);
+
+
+   &__scroll {
       font-family: inherit;
       flex-direction: column;
       display: flex;
@@ -19,7 +26,7 @@
       overscroll-behavior-y: contain;
    }
 
-   &__content {
+   &__item {
       font-family: inherit;
       flex-direction: column;
       display: flex;
@@ -40,13 +47,21 @@
       position: relative;
       flex-grow: 1;
    }
+
+   .shiba-list {
+      font-family: inherit;
+      flex-direction: column;
+      display: flex;
+      position: relative;
+      flex-grow: 1;
+   }
 }
 
 .shiba-scroll {
 
    &__layout {
       display: block;
-      height: 452px;
+      height: 0px;
       right: 0px;
       font-family: inherit;
       width: 16px;
@@ -54,15 +69,15 @@
       opacity: 0;
       transition-timing-function: ease;
       transition-duration: .5s;
+      transition-property: opacity;
       background-color: var(--divider);
    }
 
    &__scrollbar {
       display: block;
-      height: 242.392px;
+      height: 0px;
       right: 0px;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1) scale(1.36556) translateZ(-0.365559px) translateZ(-2px);
-
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1) scale(1.18016) translateZ(-0.180157px) translateZ(-2px);
       font-family: inherit;
       padding-top: 0;
       width: 16px;
@@ -77,6 +92,7 @@
       transition-duration: .3s;
       transition-property: opacity;
       padding-right: 4px;  
+      opacity: 0;
    }
 
    &__bar {

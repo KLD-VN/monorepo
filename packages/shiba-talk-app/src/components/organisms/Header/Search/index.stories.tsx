@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import HeaderSearch from '.';
 
 export default {
-  title: 'Design System/Organisms/HeaderSearch',
+  title: 'Design System/Organisms/Header/HeaderSearch',
   component: HeaderSearch,
 } as ComponentMeta<typeof HeaderSearch>;
 

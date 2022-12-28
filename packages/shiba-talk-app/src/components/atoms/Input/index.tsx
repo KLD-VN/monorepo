@@ -55,6 +55,9 @@ export interface InputProps {
   /** Callback when TextInput receives a keypress event */
   onKeyDown?(evt?: React.KeyboardEvent<HTMLInputElement>): void
 
+  /** Callback when TextInput receives mouse leave */
+  onMouseLeave?(evt?: React.MouseEvent<HTMLInputElement>): void
+
   /** Callback when InputField clicked */
   onClick?(evt?: React.MouseEvent<HTMLInputElement>): void
   /**
@@ -125,6 +128,7 @@ const Input: React.FC<InputProps> = ({
   onChange,
   onFocus,
   onKeyDown,
+  onMouseLeave,
   onClick,
   pattern,
   placeholder,
@@ -159,6 +163,7 @@ const Input: React.FC<InputProps> = ({
       onChange={handleOnChange}
       onFocus={onFocus}
       onKeyDown={onKeyDown}
+      onMouseLeave={onMouseLeave}
       pattern={pattern}
       placeholder={placeholder}
       readOnly={readOnly}

@@ -73,4 +73,44 @@
     align-items: center;
     height: var(--header-height);
   }
+
+  &__border-radius {
+    font-family: inherit;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: visible;
+    min-height: inherit;
+    overflow-x: visible;
+  }
+
+  &__border-radius-wrap {
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    transform-origin: 0 0;
+  }
+
+  &__border-radius-content {
+    font-family: inherit;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  &__search-input {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: var(--header-height);
+  }
+
+  &__search-wrap {
+    font-family: inherit;
+    width: 100%;
+  }
 }

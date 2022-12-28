@@ -155,6 +155,8 @@ const SearchInput: React.FC<SearchInputProps> = React.memo(
             placeholder="Tìm kiếm trên shiba"
             onFocus={handleFocus}
             onBlur={handleBlur}
+            onKeyDown={onKeyDown}
+            onClick={onClick}
             onChange={handleSearchChange}
             autoComplete="off"
           />
