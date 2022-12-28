@@ -7,6 +7,7 @@ export default {
    component: SearchResult,
 } as ComponentMeta<typeof SearchResult>;
 
+
 const Template: ComponentStory<typeof SearchResult> = (args) => (
    <SearchResult {...args} />
 );
