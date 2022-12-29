@@ -1,0 +1,101 @@
+@import "@/sass/index.scss";
+
+.shiba-navigation {
+    font-family: inherit;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: var(--header-height);
+    border: unset;
+    z-index: 1;
+    min-height: inherit;
+    transform: 0 0;
+    bottom: 0;
+    width: var(--global-panel-width-expanded);
+
+    &__container {
+        font-family: inherit;
+        border-radius: 0;
+        width: 100%;
+        position: relative;
+        background-color: var(--web-wash);
+        min-height: inherit;
+        overflow-x: visible;
+    }
+
+    &__wrap {
+        font-family: inherit;
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        position: relative;
+        min-height: inherit;
+        transform-origin: 0 0;
+    }
+
+    &__nav {
+        font-family: inherit;
+        height: 100%;
+    }
+
+    &__nav-wrap {
+        font-family: inherit;
+        flex-direction: column;
+        display: flex;
+        overflow-x: hidden;
+        height: 100%;
+        overflow-y: auto;
+        position: relative;
+        z-index: 0;
+        perspective: 1px;
+        perspective-origin: right top;
+        transform-style: preserve-3d;
+        overscroll-behavior-y: contain;
+    }
+
+    &__nav-scroll-layout {
+        display: block;
+        height: 882px;
+        right: 0;
+        font-family: inherit;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        transition-timing-function: ease;
+        transition-duration: .5s;
+        width: 16px;
+        transition-property: opacity;
+        background-color: var(--divider);
+    }
+
+    &__nav-scroll {
+        display: block;
+        height: 450px;
+        right: 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1) scale(1.4) translateZ(-0.4px) translateZ(-2px);
+        font-family: inherit;
+        box-sizing: border-box;
+        padding-left: 4px;
+        padding-right: 4px;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition-timing-function: ease;
+        pointer-events: none;
+        transform-origin: right top;
+        width: 16px;
+        transition-duration: .3s;
+        transition-property: opacity;
+    }
+
+    &__nav-scroll-bar {
+        font-family: inherit;
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--scroll-thumb);
+        display: block;
+    }
+}

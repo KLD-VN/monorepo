@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ControlSettings from '.';
 
 export default {
-  title: 'Design System/Organisms/ControlSettings',
+  title: 'Design System/Organisms/Header/ControlSettings',
   component: ControlSettings,
 } as ComponentMeta<typeof ControlSettings>;
 

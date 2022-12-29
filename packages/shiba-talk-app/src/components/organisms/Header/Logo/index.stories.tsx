@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import HeaderLogo from '.';
 
 export default {
-  title: 'Design System/Organisms/HeaderLogo',
+  title: 'Design System/Organisms/Header/HeaderLogo',
   component: HeaderLogo,
 } as ComponentMeta<typeof HeaderLogo>;
 
