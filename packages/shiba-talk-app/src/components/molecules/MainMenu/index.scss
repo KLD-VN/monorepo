@@ -1,0 +1,35 @@
+.shiba-main-menu {
+    font-family: inherit;
+    flex-shrink: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 0;
+    position: relative;
+    z-index: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+
+    &__container {
+        font-family: inherit;
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 0;
+        max-width: 100%;
+    }
+
+    &__wrap {
+        font-family: inherit;
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        min-height: 0;
+        position: relative;
+        z-index: 0;
+        flex-grow: 1;
+    }
+}

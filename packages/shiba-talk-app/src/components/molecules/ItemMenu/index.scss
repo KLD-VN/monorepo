@@ -95,7 +95,6 @@
       height: 20px;
       background-repeat: no-repeat;
       display: inline-block;
-      -webkit-filter: var(--filter-accent);
       vertical-align: -0.25em;
    }
 
@@ -162,5 +161,18 @@
       font-weight: 500;
       font-size: .9375rem;
       word-break: break-word;
+   }
+
+   &__overlay {
+      border-radius: 8px;
+      inset: -2px 8px;
+      font-family: inherit;
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      background-color: var(--hover-overlay);
+      transition-duration: var(--fds-duration-extra-extra-short-out);
+      transition-property: opacity;
+      transition-timing-function: var(--fds-animation-fade-out);
    }
 }
