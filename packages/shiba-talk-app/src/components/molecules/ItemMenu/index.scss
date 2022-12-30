@@ -1,0 +1,166 @@
+.shiba-item-menu {
+   font-family: inherit;
+   margin-top: 0;
+   flex-direction: column;
+   box-sizing: border-box;
+   display: flex;
+   position: relative;
+   max-width: 100%;
+   margin-bottom: 4px;
+   flex-shrink: 0;
+   z-index: 0;
+   align-items: flex-start;
+
+   &__span {
+      font-family: inherit;
+      flex-basis: inherit;
+      max-height: inherit;
+      justify-content: inherit;
+      min-width: inherit;
+      height: inherit;
+      min-height: inherit;
+      width: inherit;
+      max-width: inherit;
+      display: inherit;
+      align-self: inherit;
+      align-items: inherit;
+      flex-direction: inherit;
+      flex-shrink: inherit;
+   }
+
+   &__wrap {
+      font-family: inherit;
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: flex-start;
+   }
+
+   .shiba-link {
+      font-family: inherit;
+      padding-bottom: 8px;
+      padding-right: 20px;
+      margin-bottom: 0;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-top: 8px;
+      flex-direction: row;
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+      cursor: pointer;
+      min-width: 0;
+      flex-basis: auto;
+      border-width: 0;
+      min-height: 0;
+      flex-shrink: 0;
+      border-style: solid;
+      z-index: 0;
+      text-decoration: none;
+      border-color: var(--always-dark-overlay);
+      touch-action: manipulation;
+      list-style: none;
+      border-radius: inherit;
+      outline-style: none;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+      text-align: inherit;
+   }
+
+   &__mark {
+      font-family: inherit;
+      background-color: var(--accent);
+      border-radius: 8px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform-origin: top;
+      transition-duration: var(--fds-duration-extra-short-in);
+      height: 36px;
+      transition-property: opacity, transform;
+      transform: scaleY(1) translateY(-50%);
+      width: 4px;
+      opacity: 1;
+      transition-timing-function: var(--fds-animation-expand-collapse-in);
+   }
+
+   .shiba-icon {
+      background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/YHLvfJvVfG6.png);
+      background-position: 0 0;
+      background-size: auto;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      -webkit-filter: var(--filter-accent);
+      vertical-align: -0.25em;
+   }
+
+   &__content {
+      font-family: inherit;
+      position: relative;
+      margin-left: 14px;
+      flex-basis: inherit;
+      max-height: inherit;
+      width: calc(var(--global-panel-width-expanded) - var(--global-panel-width) - 14px);
+      justify-content: inherit;
+      flex-grow: inherit;
+      min-width: inherit;
+      height: inherit;
+      min-height: inherit;
+      max-width: inherit;
+      display: inherit;
+      align-self: inherit;
+      align-items: inherit;
+      flex-direction: inherit;
+      flex-shrink: inherit;
+   }
+
+   &__content-wrap {
+      font-family: inherit;
+      max-width: 100%;
+      min-width: 0;
+      word-wrap: break-word;
+      display: block;
+      color: var(--primary-text);
+      line-height: 1.3333;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 500;
+      font-size: .9375rem;
+      word-break: break-word;
+
+      &::before {
+         margin-top: -4px;
+         display: block;
+         content: "";
+         height: 0;
+      }
+
+      &::after {
+         margin-top: -4px;
+         display: block;
+         content: "";
+         height: 0;
+      }
+   }
+
+   &__content-title {
+      font-family: inherit;
+      overflow-x: hidden;
+      position: relative;
+      overflow-y: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: block;
+      word-wrap: break-word;
+      color: var(--primary-text);
+      line-height: 1.3333;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 500;
+      font-size: .9375rem;
+      word-break: break-word;
+   }
+}

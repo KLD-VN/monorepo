@@ -1,3 +1,6 @@
+import FooterMenu from "@/components/molecules/FooterMenu";
+import HomeMenu from "@/components/molecules/HomeMenu";
+import MainMenu from "@/components/molecules/MainMenu";
 import React from "react";
 import "./index.scss";
 
@@ -20,10 +23,13 @@ const ShibaNavigation: React.FC<ShibaNavigationProps> = () => {
                   <div className={`${PREFIX}__nav-content-box-container`}>
                     <div className={`${PREFIX}__nav-content-box-wrap`}>
                       {/* --$-- */}
+                      <HomeMenu />
                       {/* --/$-- */}
                       {/* --$-- */}
+                      <MainMenu />
                       {/* --/$-- */}
                       {/* --$-- */}
+                      <FooterMenu />
                       {/* --/$-- */}
                     </div>
                   </div>
