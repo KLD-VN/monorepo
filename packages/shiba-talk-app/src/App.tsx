@@ -1,10 +1,10 @@
-import Header from './components/organisms/Header'
+import HomePage from './components/Pages/HomePage'
 import '@/sass/index.scss'
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <HomePage />
     </div>
   )
 }

@@ -47,7 +47,7 @@ const SearchItem: React.FC<SearchItemProps> = ({
           <div className={`${PREFIX}__image-padding`}>
             <div className={`${PREFIX}__image-wrap`}>
               <CircleImage
-                href="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/305208692_447959430690207_8876650612638079685_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=110&ccb=1-7&_nc_sid=c6021c&_nc_ohc=5ICbUi01niMAX_hn68Y&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCwTXMk-az7v9W90hlZsbliYHdtlYU_DxWFx-fv-cpLIQ&oe=63AF959E"
+                href="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-1/74172927_2268779459918531_6109858988814237696_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ry97nUCjAoAAX8nNv1u&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDLnkVqzVvj0LzjbJ9H6YZDL1Zoadwvlvecd_nvKINtcA&oe=63D70F16"
                 height="36"
                 width="36"
               />

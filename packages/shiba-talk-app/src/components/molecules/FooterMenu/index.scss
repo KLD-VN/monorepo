@@ -1,0 +1,74 @@
+.shiba-footer-menu {
+    font-family: inherit;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    z-index: 0;
+    justify-content: flex-end;
+
+    &__container {
+        font-family: inherit;
+        padding: 16px;
+    }
+
+    &__content {
+        font-family: inherit;
+        font-size: .8125rem;
+        display: block;
+        max-width: 100%;
+        min-width: 0;
+        word-wrap: break-word;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        color: var(--secondary-text);
+        line-height: 1.2308;
+        word-break: break-word;
+        unicode-bidi: isolate;
+
+        &::before {
+            margin-top: -4px;
+            display: block;
+            content: "";
+            height: 0;
+        }
+
+        &::after {
+            margin-bottom: -3px;
+            display: block;
+            content: "";
+            height: 0;
+        }
+    }
+    li {
+        display: inline;
+    }
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline;
+        color: var(--secondary-text);
+        word-break: break-word;
+        -webkit-font-smoothing: antialiased;
+        word-wrap: break-word;
+        font-size: .8125rem;
+        text-align: inherit;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        margin-top: 0;
+        list-style: none;
+        touch-action: manipulation;
+        background-color: transparent;
+        font-weight: 400;
+        text-decoration: none;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.2308;
+        word-break: break-word;
+
+    }
+}

@@ -20,7 +20,7 @@ const HeaderSearch: React.FC<{}> = () => {
     setIsFocus(true);
   };
 
-  const handleBlur = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleBlur = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsFocus(false);
   };
 
@@ -38,7 +38,7 @@ const HeaderSearch: React.FC<{}> = () => {
                   <SearchInput
                       id={"search-input-id"}
                       onFocus={handleFocus}
-                      onKeyDown={handleBlur}
+                      onBlur={handleBlur}
                     />
                   </div>
                   </div>

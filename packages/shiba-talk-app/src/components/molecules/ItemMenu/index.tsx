@@ -1,4 +1,4 @@
-import { Icon, Link } from "@/components/atoms";
+import { CircleImage, Icon, Link } from "@/components/atoms";
 import React from "react";
 import "./index.scss";
 
@@ -11,14 +11,18 @@ export interface ItemMenuProps {
   /* The icon url of the item menu */
   iconUrl?: string;
 
-  /* The position of the icon */
+  /* The position of the item menu */
   position?: string;
+
+  /* Sets the type element represents */
+  type?: "icon" | "image";
 }
 
 const ItemMenu: React.FC<ItemMenuProps> = ({
   title,
   iconUrl,
   position,
+  type = "icon"
 }: ItemMenuProps) => {
   const [isFocus, setFocus] = React.useState(false);
 
@@ -41,6 +45,16 @@ const ItemMenu: React.FC<ItemMenuProps> = ({
       }
     : {};
 
+    const icon = () => {
+      switch (type) {
+        case "icon":
+          return <Icon style={iconStyle} />;
+        case "image":
+          return <CircleImage width="24" height="24" href={iconUrl || ""} />;
+        default:
+          return <Icon style={iconStyle} />;
+      }
+    }
   return (
     <div className={PREFIX}>
       <span className={`${PREFIX}__span`}>
@@ -51,7 +65,7 @@ const ItemMenu: React.FC<ItemMenuProps> = ({
         >
           <Link href="/">
             <div className={`${PREFIX}__mark`}></div>
-            <Icon style={iconStyle} />
+            {icon()}
             <div className={`${PREFIX}__content`}>
               <span className={`${PREFIX}__content-wrap`}>
                 <span className={`${PREFIX}__content-title`}>{title}</span>

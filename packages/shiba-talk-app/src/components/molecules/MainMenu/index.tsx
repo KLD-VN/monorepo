@@ -1,7 +1,6 @@
 import React from "react";
-import "./index.scss";
-import ItemMenu from "../ItemMenu";
 import FullMenu from "./Full";
+import "./index.scss";
 
 const PREFIX = "shiba-main-menu";
 

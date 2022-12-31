@@ -6,9 +6,9 @@ import "./index.scss";
 
 const PREFIX = "shiba-navigation";
 
-export interface ShibaNavigationProps {}
+export interface NavigationProps {}
 
-const ShibaNavigation: React.FC<ShibaNavigationProps> = () => {
+const Navigation: React.FC<NavigationProps> = () => {
   return (
     <div className={PREFIX} role="navigation">
       <div className={`${PREFIX}__container`}>
@@ -21,17 +21,15 @@ const ShibaNavigation: React.FC<ShibaNavigationProps> = () => {
                 {/* --$-- */}
                 <div className={`${PREFIX}__nav-content-box`}>
                   <div className={`${PREFIX}__nav-content-box-container`}>
-                    <div className={`${PREFIX}__nav-content-box-wrap`}>
-                      {/* --$-- */}
-                      <HomeMenu />
-                      {/* --/$-- */}
-                      {/* --$-- */}
-                      <MainMenu />
-                      {/* --/$-- */}
-                      {/* --$-- */}
-                      <FooterMenu />
-                      {/* --/$-- */}
-                    </div>
+                    {/* --$-- */}
+                    <HomeMenu />
+                    {/* --/$-- */}
+                    {/* --$-- */}
+                    <MainMenu />
+                    {/* --/$-- */}
+                    {/* --$-- */}
+                    <FooterMenu />
+                    {/* --/$-- */}
                   </div>
                 </div>
 
@@ -51,4 +49,4 @@ const ShibaNavigation: React.FC<ShibaNavigationProps> = () => {
   );
 };
 
-export default ShibaNavigation;
+export default Navigation;

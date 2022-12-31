@@ -1,0 +1,40 @@
+.shiba-header-background {
+    font-family: inherit;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: var(--nav-bar-background);
+    height: var(--header-height);
+    border-bottom: 1px solid var(--wash);
+
+    &__wrap {
+        font-family: inherit;
+        flex-direction: column;
+        box-sizing:  border-box;
+        display: flex;
+        position: relative;
+        z-index: 0;
+        justify-content: flex-end;
+    }
+
+    &__border-bottom {
+        font-family: inherit;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -6px;
+        z-index: 0;
+        height: 1px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAOBAMAAAD3WtBsAAAAFVBMVEUAAAAAAAAAAAAAAAAAAAAAAAD29va1cB7UAAAAB3RSTlMCCwQHGBAaZf6MKAAAABpJREFUCNdjSGNIY3BhCGUQBEJjIFQCQigAACyJAjLNW4w5AAAAAElFTkSuQmCC);
+        pointer-events: none;
+        background-size: 1px 7px;
+        background-repeat: repeat-x;
+        height: 7px;
+    }
+}

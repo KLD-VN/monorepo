@@ -9,7 +9,7 @@
     border: unset;
     z-index: 1;
     min-height: inherit;
-    transform: 0 0;
+    transform-origin: 0 0;
     bottom: 0;
     width: var(--global-panel-width-expanded);
 
@@ -17,9 +17,11 @@
         font-family: inherit;
         border-radius: 0;
         width: 100%;
+        height: 100%;
         position: relative;
         background-color: var(--web-wash);
         min-height: inherit;
+        overflow-y: visible;
         overflow-x: visible;
     }
 
@@ -44,13 +46,47 @@
         display: flex;
         overflow-x: hidden;
         height: 100%;
-        overflow-y: auto;
+        overflow-y: hidden;
         position: relative;
         z-index: 0;
         perspective: 1px;
         perspective-origin: right top;
         transform-style: preserve-3d;
         overscroll-behavior-y: contain;
+    }
+
+    &__nav-content {
+        font-family: inherit;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__nav-content-box {
+        font-family: inherit;
+        flex-shrink: 1;
+        padding-top: 0;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        box-sizing: border-box;
+        flex-grow: 1;
+        min-height: 0;
+        z-index: 0;
+        flex-basis: 100%;
+    }
+
+    &__nav-content-box-container {
+        font-family: inherit;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        flex-grow: 1;
+        min-height: 0;
+        z-index: 0;
     }
 
     &__nav-scroll-layout {
@@ -78,7 +114,7 @@
         padding-left: 4px;
         padding-right: 4px;
         position: absolute;
-        opacity: 0;
+        opacity: 1;
         top: 0;
         padding-top: 0;
         padding-bottom: 0;
