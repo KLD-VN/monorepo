@@ -13,7 +13,7 @@ const PREFIX = "shiba-control-settings";
 
 const ControlSettings: React.FC<{}> = () => {
   const href =
-    "https://scontent.fsgn2-1.fna.fbcdn.net/v/t39.30808-1/290873204_1401951403641858_8722845100338118315_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=k9edp3p4qV4AX8rfmYe&_nc_ht=scontent.fsgn2-1.fna&oh=00_AfAotzQRHsyTDWLagO-bSvo9gmx9GEFWR4_X_B8l1qLx1A&oe=63A92750";
+    "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-1/290873204_1401951403641858_8722845100338118315_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=87Y17CyNwVIAX-dAPQR&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfCIeXY4XetFbxbiOzp3bnC_GgbhGgG94Shv4UbyRrBytg&oe=6413F0D0";
 
   const messengerIcon = (
     <Icon size="sm">
@@ -26,7 +26,7 @@ const ControlSettings: React.FC<{}> = () => {
       <NotificationSVG color="primary" />
     </Icon>
   );
-  const personalIcon = <CircleImage width="24" height="24" href={href} />;
+  const personalIcon = <CircleImage width="24" height="24" href={href} id="2"/>;
 
   const messenger = (
     <div className={`${PREFIX}__messenger`}>

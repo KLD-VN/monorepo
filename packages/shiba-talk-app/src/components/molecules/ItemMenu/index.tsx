@@ -26,6 +26,10 @@ const ItemMenu: React.FC<ItemMenuProps> = ({
 }: ItemMenuProps) => {
   const [isFocus, setFocus] = React.useState(false);
 
+  React.useEffect(() => {
+    console.log('isFocus', isFocus);
+  },[])
+
   const handleFocus = () => {
     setFocus(true);
   };
@@ -50,7 +54,7 @@ const ItemMenu: React.FC<ItemMenuProps> = ({
         case "icon":
           return <Icon style={iconStyle} />;
         case "image":
-          return <CircleImage width="24" height="24" href={iconUrl || ""} />;
+          return <CircleImage width="24" height="24" href={iconUrl || ""} id="3" />;
         default:
           return <Icon style={iconStyle} />;
       }

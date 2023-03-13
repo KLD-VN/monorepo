@@ -6,7 +6,7 @@ import "./index.scss";
 
 const PREFIX = "shiba-navigation";
 
-export interface NavigationProps {}
+export interface NavigationProps { }
 
 const Navigation: React.FC<NavigationProps> = () => {
   return (
@@ -35,10 +35,10 @@ const Navigation: React.FC<NavigationProps> = () => {
 
                 {/* --/$-- */}
               </div>
-              <div className={`${PREFIX}__nav-scroll-layout`}></div>
+              {/* <div className={`${PREFIX}__nav-scroll-layout`}></div>
               <div className={`${PREFIX}__nav-scroll`}>
                 <div className={`${PREFIX}__nav-scroll-bar`}></div>
-              </div>
+              </div> */}
               {/* --/$-- */}
             </div>
           </div>

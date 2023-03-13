@@ -17,7 +17,7 @@ export default {
 const href =
   "https://i.pinimg.com/736x/4f/7e/f5/4f7ef5f81ca49f259e9cbfd3852907ef.jpg";
 
-const iconPersonal = <CircleImage width="28px" height="28px" href={href} />
+const iconPersonal = <CircleImage width="28px" height="28px" href={href} id="1"/>
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 

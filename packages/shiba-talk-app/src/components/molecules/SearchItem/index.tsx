@@ -14,7 +14,7 @@ const SearchItem: React.FC<SearchItemProps> = ({
 }: SearchItemProps) => {
   const iconStyle: React.CSSProperties = {
     backgroundImage:
-      'url("https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png")',
+      'url("https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-1/326977212_1823541088020999_8175488239865928615_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=103&ccb=1-7&_nc_sid=3170a5&_nc_ohc=Z-iVpTJIbu0AX9g9XZL&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfB6XcBwUWP8lqVYHah__zoE4QotXd6fLxwZd971ImPgmQ&oe=63F793C1")',
     backgroundPosition: "-13px -164px",
     backgroundSize: "auto",
     width: "12px",
@@ -47,7 +47,8 @@ const SearchItem: React.FC<SearchItemProps> = ({
           <div className={`${PREFIX}__image-padding`}>
             <div className={`${PREFIX}__image-wrap`}>
               <CircleImage
-                href="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-1/74172927_2268779459918531_6109858988814237696_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ry97nUCjAoAAX8nNv1u&_nc_ht=scontent.fhan14-2.fna&oh=00_AfDLnkVqzVvj0LzjbJ9H6YZDL1Zoadwvlvecd_nvKINtcA&oe=63D70F16"
+                id="4"
+                href="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-1/326977212_1823541088020999_8175488239865928615_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=103&ccb=1-7&_nc_sid=3170a5&_nc_ohc=RNWCDn4K01YAX8JIV6Z&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfAkAUxz55SKnFw9OM8psk5c5WvwZARcb_-E6WzEOENFYg&oe=64153D81"
                 height="36"
                 width="36"
               />

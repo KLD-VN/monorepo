@@ -15,10 +15,12 @@ export interface CircleImageProps {
 
   /** Height of the image, in pixels or percentage */
   height: string;
+
+  /** Id of item   */
+  id: string;
 }
 
-const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
-  console.log('height: ', height)
+const CircleImage: React.FC<CircleImageProps> = ({ href, width, height, id }) => {
   return (
     <div
       className={PREFIX}
@@ -34,7 +36,7 @@ const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
           height: height + "px",
         }}
       >
-        <mask id="person">
+        <mask id={id}>
           <circle
             cx={Number(width) / 2}
             cy={Number(width) / 2}
@@ -42,7 +44,7 @@ const CircleImage: React.FC<CircleImageProps> = ({ href, width, height }) => {
             r={Number(width) / 2}
           ></circle>
         </mask>
-        <g mask="url(#person)">
+        <g mask={`url(#${id})`}>
           <image
             style={{
               width: width + "px",
